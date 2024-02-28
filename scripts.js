@@ -9,7 +9,6 @@ function onScroll() {
   activateMenuAtCurrentSection(industry);
   activateMenuAtCurrentSection(services);
   activateMenuAtCurrentSection(systems);
-  activateMenuAtCurrentSection(team);
   activateMenuAtCurrentSection(contact);
 }
 
@@ -40,9 +39,6 @@ function activateMenuAtCurrentSection(section) {
         break;
       case 'systems':
         currentSection.children[0].innerText = 'Sistemas';
-        break;
-      case 'team':
-        currentSection.children[0].innerText = 'Equipe';
         break;
       case 'contact':
         currentSection.children[0].innerText = 'Contato';
@@ -98,7 +94,6 @@ ScrollReveal({
   #services,
   #services .card,
   #systems,
-  #team,
   #contact,
   #contact > .wrapper,
   #contact img,
